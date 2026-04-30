@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 4 T'chers · Productontwikkeling UA</title>
+  <meta name="description" content="Community of product development educators at Universiteit Antwerpen learning AI tools together. Bridge the Gap · Learning by Doing · Organic but Fast." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI 4 T'chers · Productontwikkeling UA" />
+  <meta property="og:description" content="Bridge the Gap · Learning by Doing · Organic but Fast" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jsaldien.github.io/AI4Tchers/" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon: UA monogram as SVG data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%237a9fab'/><text x='16' y='22' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='14' fill='white'>AI</text></svg>" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="container">
+      <a href="#" class="nav-brand" aria-label="AI 4 T'chers home">
+        AI 4 T'chers
+        <span class="nav-brand-sub">Productontwikkeling · UA</span>
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#sessions"  class="nav-link">Sessions</a>
+        <a href="#resources" class="nav-link">Resources</a>
+        <a href="#projects"  class="nav-link">Projects</a>
+        <a href="#about"     class="nav-link">About</a>
+        <a href="https://github.com/AIProductDesign/AI4Tchers"
+           target="_blank"
+           rel="noopener"
+           class="nav-link nav-link--github">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="16" height="16" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          GitHub ↗
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═════════════════════════════════════════════════════════════════════
+         HERO
+         ═════════════════════════════════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="container hero-content">
+
+        <span class="hero-eyebrow">Universiteit Antwerpen · Productontwikkeling</span>
+
+        <h1>AI 4 T'<span class="highlight">chers</span></h1>
+
+        <p class="hero-tagline">
+          Bridge the Gap
+          <span class="sep">·</span>
+          Learning by Doing
+          <span class="sep">·</span>
+          Organic but Fast
+        </p>
+
+        <p class="hero-desc">
+          A community of product development educators learning AI tools together —
+          in the open, session by session, experiment by experiment.
+        </p>
+
+        <div class="hero-goal">
+          "I want to build my own AI agent within 6 months"
+        </div>
+
+        <div class="hero-pills" role="list" aria-label="Topics">
+          <span class="topic-pill" role="listitem">Gen AI</span>
+          <span class="topic-pill" role="listitem">RAG</span>
+          <span class="topic-pill" role="listitem">Agents</span>
+          <span class="topic-pill" role="listitem">MCP</span>
+          <span class="topic-pill" role="listitem">Skills</span>
+          <span class="topic-pill" role="listitem">Agentic AI</span>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#sessions" class="btn-hero-primary">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+            Bekijk sessies
+          </a>
+          <a href="#about" class="btn-hero-secondary">
+            Meer over dit project
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ═════════════════════════════════════════════════════════════════════
+         SESSIONS
+         ═════════════════════════════════════════════════════════════════════ -->
+    <section id="sessions">
+      <div class="container">
+        <div class="section-header">
+          <h2>Sessions</h2>
+          <p>
+            Elke sessie verkennen we een AI-thema samen — met demo's, discussie en hands-on oefeningen.
+            Slides en opnames worden hier gedeeld na elke bijeenkomst.
+          </p>
+        </div>
+
+        <!-- Rendered by js/main.js → renderSessions() -->
+        <div class="sessions-grid" id="sessions-container" aria-live="polite">
+          <noscript>
+            <p style="color:#718096; font-style:italic;">
+              JavaScript is required to display the session cards.
+            </p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════════════════════════════════════════════════════════════
+         RESOURCES
+         ═════════════════════════════════════════════════════════════════════ -->
+    <section id="resources">
+      <div class="container">
+        <div class="section-header">
+          <h2>Resources</h2>
+          <p>
+            Nuttige links, tools, podcasts en interne UA-bronnen die we samen verzamelen.
+            Nieuwe suggesties zijn altijd welkom via GitHub.
+          </p>
+        </div>
+
+        <!-- Rendered by js/main.js → renderResources() -->
+        <div id="resources-container" aria-live="polite">
+          <noscript>
+            <p style="color:#718096; font-style:italic;">
+              JavaScript is required to display resources.
+            </p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════════════════════════════════════════════════════════════
+         PROJECTS
+         ═════════════════════════════════════════════════════════════════════ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>
+            Experimenten, tools en mini-projecten van collega's uit de groep.
+            Deel jouw werk — voeg jouw repo toe aan <code>js/sessions.js</code>.
+          </p>
+        </div>
+
+        <!-- Rendered by js/main.js → renderProjects() -->
+        <div id="projects-container" aria-live="polite">
+          <noscript>
+            <p style="color:#718096; font-style:italic;">
+              JavaScript is required to display projects.
+            </p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════════════════════════════════════════════════════════════
+         ABOUT
+         ═════════════════════════════════════════════════════════════════════ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About AI 4 T'chers</h2>
+          <p>
+            Wie zijn we, wat doen we, en waarom is dit het juiste moment?
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"/></svg>
+            </div>
+            <h3 class="about-card-title">Waarom dit initiatief?</h3>
+            <p class="about-card-text">
+              AI evolueert razendsnel. Als opleidingsteam Productontwikkeling willen we niet afhankelijk zijn van externe experts — we leren het zelf, samen, in ons eigen tempo. <em>Organic but Fast.</em>
+            </p>
+          </div>
+
+          <div class="about-card about-card-highlight">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+            </div>
+            <h3 class="about-card-title">Ons doel</h3>
+            <p class="about-card-text">
+              Binnen 6 maanden wil elke deelnemer een eigen AI-agent kunnen bouwen — voor onderwijs, onderzoek of persoonlijk gebruik. Van prompting tot agentic systems.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+            </div>
+            <h3 class="about-card-title">Wie doet mee?</h3>
+            <p class="about-card-text">
+              Docenten, onderzoekers en onderwijsontwikkelaars van het departement Productontwikkeling (UA). Technische en niet-technische collega's leren zij aan zij. <em>Bridge the Gap.</em>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">AI 4 T'chers</div>
+        <div class="footer-meta">
+          Departement Productontwikkeling ·
+          <a href="https://www.uantwerpen.be" target="_blank" rel="noopener">Universiteit Antwerpen</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#sessions">Sessions</a>
+        <a href="#resources">Resources</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/AIProductDesign/AI4Tchers" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SCRIPTS
+       Sessions data must load before main rendering logic.
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <script src="js/sessions.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Mobile nav toggle inline (tiny, no extra file) -->
+  <script>
+    (function () {
+      var toggle = document.getElementById("nav-toggle");
+      var links  = document.getElementById("nav-links");
+      if (!toggle || !links) return;
+
+      toggle.addEventListener("click", function () {
+        var open = links.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        document.body.style.overflow = open ? "hidden" : "";
+      });
+
+      // Close when a nav link is clicked
+      links.querySelectorAll(".nav-link").forEach(function (link) {
+        link.addEventListener("click", function () {
+          links.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+          document.body.style.overflow = "";
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
