@@ -1036,7 +1036,7 @@ footer {
   .nav-toggle { display: flex; }
 
   .hero { min-height: 100svh; }
-  .hero-content { padding: 24px 0 72px; }
+  .hero-content { padding: 24px 1.75rem 72px; }
 
   .hero-eyebrow {
     font-size: .7rem;
